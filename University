@@ -1,0 +1,23 @@
+package pp;
+class University{
+person Tab[];
+int sizeTab;
+int n;
+//constructor for University
+University(int sizeTab){
+this.sizeTab = sizeTab;
+n = 0;
+Tab = new person[sizeTab];
+}
+//Defining addPerson method
+public void addPerson(person p) {
+Tab[n] = p;
+n++;
+}
+//Defining printAll method
+public void printAll() {
+for(int i=0;i<n;i++) {
+Tab[i].print();
+}
+}
+}
