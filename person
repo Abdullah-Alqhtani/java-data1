@@ -1,0 +1,49 @@
+package pp;
+public abstract class person { //the first method in the program
+String name; //the first attribute
+int age;//the sacand one
+public person (String name , int age) {//in this method we chosen the attributes
+	this.name=name;//Select which one
+	this.age=age;// select which one
+}
+public String getName() {// this method to see the name
+	return name; //return the name to the method
+}
+public void setName(String name) { //to see the age
+	this.name=name;//select which name
+}
+public int getAge() {
+	return age; //return to the method
+}
+public void setAge(int age) {
+	this.age=age; //select which age
+}
+public void print() { // this method to print
+	System.out.println("name="+name);
+	System.out.println("age="+age);}
+	public static void main(String[] args) {
+		student s1=new student("abullah",20,443812436);// Send the information to the method
+		student s2=new student("khald",19,423331234);// Send the information to the method
+		student s3=new student("mohamed",22,443843322);// Send the information to the method
+		teacher t1=new teacher("ali",45,1462);// Send the information to the method
+		teacher t2=new teacher("khaled",35,1135);// Send the information to the method
+		teacher t3=new teacher("abdulazez",28,1229);// Send the information to the method
+		s1.print();
+		s2.print();
+		s3.print(); //call this mathod
+		System.out.println("");// Send the information to the mathod
+		System.out.println("teacher:");// Send the information to the mathod
+		t1.print();
+		t2.print();
+		t3.print();//call this mathod
+	//creating University Object
+		University u = new University(6);
+		//calling addPerson method
+		u.addPerson(s1);
+		u.addPerson(s2);
+		u.addPerson(s3);
+		u.addPerson(t1);
+		u.addPerson(t2);
+		u.addPerson(t3);
+		//calling printAll method
+		u.printAll();	}}
